@@ -4,29 +4,8 @@
     {
         static void Main(string[] args)
         {
-            const int fizzBuzzLength = 100;
-            
-            for (int i = 0; i < fizzBuzzLength; i++)
-            {
-                string line = "";
-
-                if (i % 3 == 0)
-                {
-                    line += "Fizz";
-                }
-
-                if (i % 5 == 0)
-                {
-                    line += "Buzz";
-                }
-
-                if (string.IsNullOrEmpty(line))
-                {
-                    line = i.ToString();
-                }
-
-                Console.WriteLine(line);
-            }
+            FizzBuzz buzz = new FizzBuzz(20);
+            buzz.PrintFizzBuzz();
         }
     }
 }
